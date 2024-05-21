@@ -1,0 +1,19 @@
+NLP 
+NLP is a field of Linguistics (science of study of language) and it is ML focused and it tries to understand everything possible related to human language.
+It does not only tries to undersrand the single word individually but also tries to undesatnd the full context of the language.
+Egs - 1. Classifying Sentences (positive or negetive sentiments , email spam 0/1 , sentences correct in grammer or not)
+2. Classifying each word (nown, adjective etc).
+3. Text Generation - Completing a prompt with auto-generated text , filling the blanks (masked words)
+4. Extracting an answer from a text 
+5. Generating a new sentance from input text - Translationg into another language , summarizing.
+
+Further dwelling one should have a basic information of API's.
+
+The pipeline() API is a high level API which we can call in our code , and it does the required pre and post processing with the input , this API calling helps input to interact with the model on model hub.
+
+An important point for the knowing purpose is - classifier = pipeline("sentiment-analysis") will download the cached model in the device , re running it won't download the model again.
+
+The 3 step process involved is -
+1. Text is pre-processed into a format model can understand.
+2. The pre-processed inputs are passed into model via calling API 
+3. The predictions of model are post-processed so we can make sense from the output.
